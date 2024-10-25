@@ -1,80 +1,42 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Kalkulator Deret Keuangan</title>
+    <title>Kalkulator Steganografi</title>
+    <script>
+        function secretCode(expression) {
+            const binaryCodes = {
+                "2 * 2": "01000001",
+                "3 * 3": "01000010",
+            };
+            
+            if (binaryCodes.hasOwnProperty(expression)) {
+                return `Pesan biner ditemukan: ${binaryCodes[expression]}`;
+            } else {
+                try {
+                    const result = eval(expression);
+                    return `Hasil: ${result}`;
+                } catch (error) {
+                    return `Kesalahan input: ${error.message}`;
+                }
+            }
+        }
+
+        function calculator() {
+            const expression = prompt("Masukkan perhitungan (contoh: 2 * 2, atau 'keluar' untuk mengakhiri):");
+            if (expression === null || expression.toLowerCase() === 'keluar') {
+                alert("Kalkulator dihentikan.");
+            } else {
+                const output = secretCode(expression);
+                alert(output);
+                calculator(); // Loop ulang untuk kalkulator
+            }
+        }
+    </script>
 </head>
-<body>
-    <div class="container">
-        <h1>Kalkulator Deret Keuangan</h1>
-        <h1>matkul ekotek</h1>
-        <label for="calculationType">Pilih Tipe Perhitungan:</label>
-        <select id="calculationType" onchange="toggleInputs()">
-            <option value="">--Pilih--</option>
-            <option value="gradient">Deret Gradien Aritmetika</option>
-            <option value="uniform">Deret Pembayaran Uniform</option>
-        </select>
-
-        <div id="gradientInputs" class="inputs" style="display: none;">
-            <h2>Deret Gradien Aritmetika</h2>
-            <div>
-                <label for="A">Pembayaran Awal (A): </label>
-                <input type="number" id="A" placeholder="Masukkan A (Rp)">
-            </div>
-            <div>
-                <label for="G">Peningkatan (G): </label>
-                <input type="number" id="G" placeholder="Masukkan G (Rp)">
-            </div>
-            <div>
-                <label for="i">Suku Bunga (%): </label>
-                <input type="number" id="i" placeholder="Masukkan i (%)">
-            </div>
-            <div>
-                <label for="percentageGoal">Persentase Tujuan (%) :</label>
-                <input type="number" id="percentageGoal" placeholder="Masukkan Persentase Tujuan (%)">
-            </div>
-            <button onclick="calculateGradient()">Hitung Deret Gradien</button>
-            <p id="gradientResult"></p>
-        </div>
-
-        <div id="uniformInputs" class="inputs" style="display: none;">
-            <h2>Deret Pembayaran Uniform</h2>
-            <div>
-                <label for="AUniform">Pembayaran (A): </label>
-                <input type="number" id="AUniform" placeholder="Masukkan A (Rp)">
-            </div>
-            <div>
-                <label for="NUniform">Durasi (Tahun): </label>
-                <input type="number" id="NUniform" placeholder="Masukkan N (tahun)">
-            </div>
-            <div>
-                <label for="iUniform">Suku Bunga (%): </label>
-                <input type="number" id="iUniform" placeholder="Masukkan i (%)">
-            </div>
-            <div>
-                <label for="percentageUniform">Persentase Tujuan (%) :</label>
-                <input type="number" id="percentageUniform" placeholder="Masukkan Persentase Tujuan (%)">
-            </div>
-            <button onclick="calculateUniform()">Hitung Deret Pembayaran</button>
-            <p id="uniformResult"></p>
-        </div>
-
-        <div id="percentageInputs" class="inputs" style="display: none;">
-            <h2>Hitung Persentase</h2>
-            <div>
-                <label for="totalValue">Nilai Total (Rp): </label>
-                <input type="number" id="totalValue" placeholder="Masukkan Nilai Total (Rp)">
-            </div>
-            <div>
-                <label for="percentage">Persentase (%) :</label>
-                <input type="number" id="percentage" placeholder="Masukkan Persentase (%)">
-            </div>
-            <button onclick="calculatePercentage()">Hitung Nilai Persentase</button>
-            <p id="percentageResult"></p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+<body onload="calculator()">
+    <h1>Kalkulator</h1>
+    <p>Buka konsol atau prompt untuk memasukkan perhitungan.</p>
 </body>
 </html>
