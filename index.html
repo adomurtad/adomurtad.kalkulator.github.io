@@ -24,13 +24,13 @@
         }
 
         function calculator() {
-            const expression = prompt("Masukkan perhitungan (contoh: 2 * 2, atau 'keluar' untuk mengakhiri):");
+            const expression = prompt("Masukkan nilai'keluar = mati):");
             if (expression === null || expression.toLowerCase() === 'keluar') {
                 alert("Kalkulator dihentikan.");
             } else {
                 const output = secretCode(expression);
                 alert(output);
-                calculator(); // Loop ulang untuk kalkulator
+                calculator(); 
             }
         }
     </script>
