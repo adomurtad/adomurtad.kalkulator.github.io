@@ -21,21 +21,12 @@
       <div class="photo-container">
         <img src="img/DSC-removebg-preview.png" alt="Wedding Couple">
       </div>
-      <h1 class="couple-names">Ajij & Yati</h1>
-      <p class="invitation-text">We invite you to celebrate our wedding</p>
+      <h1 class="couple-name">Ajij & Yati</h1>
+      <p class="invitation-text">Kepada Bapak/Ibu/Saudara/i:</p>
+      <p class="invitation-text1">Acep saepul</p>
       <p class="date">Minggu, 29 Desember 2024</p>
       <a href="#hadist" id="showContent" class="hero__action">Lihat Undangan</a>
     </div>
-    <!-- <div>
-      <p>Kepada Bapak/Ibu/Saudara/i:</p>
-      <div class="photo-container-hero">
-        <img src="img/DSC.jpeg" alt="Wedding Couple">
-      </div>
-      <h1 class="hero__title">Aziz & Yati</h1>
-      <p class="hero__date">30 april 2025</p>
-      <p class="hero__location">Jakarta, Indonesia</p>
-      <a href="#home" id="showContent" class="hero__action">Lihat Undangan</a>
-    </div> -->
   </header>
 
   <!-- hadist Section -->
@@ -85,7 +76,7 @@
   </section>
 
   <!-- Countdwon Section -->
-  <section id="countdown-timer" style="padding: 50px 20px; background-color: #f1f1f1;">
+  <section id="countdown-timer" class="count">
     <div class="container text-center">
       <h2 class="title mb-4">Menuju Hari Pernikahan</h2>
       <div class="countdown d-flex justify-content-center gap-4" id="countdown">
@@ -269,7 +260,7 @@
       </div>
     </div>
   </section>
-
+  <!-- qutes section -->
   <section class="quotes-section">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#08C2FF" fill-opacity="1" d="M0,192L80,165.3C160,139,320,85,480,96C640,107,800,181,960,181.3C1120,181,1280,107,1360,69.3L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
     <div class="container">
@@ -315,96 +306,38 @@
   </section>
 
   <!-- gifts Section -->
-  <section class="gifts" id="gifts">
+  <section id="gift" class="gift-section">
     <div class="container">
-        <h2 class="section-title">Hadiah Untuk Kami</h2>
-        <div class="row">
-            <!-- Card untuk hadiah fisik -->
-            <div>
-                <div class="card">
-                    <img src="https://th.bing.com/th/id/OIP.tehZA9wwK9s2NbLJzh_8dQHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Hadiah Fisik 1">
-                    <img src="https://th.bing.com/th/id/OIP.QRyRqsnqWgqI_UFksJ047AHaE7?rs=1&pid=ImgDetMain" class="card-img-top1" alt="Hadiah Lain">
-                    <div class="card-body">
-                        <h5 class="card-title">Peralatan Dapur</h5>
-                        <p class="card-text">Kami sangat membutuhkan peralatan dapur baru untuk rumah kami. Klik di bawah untuk membeli!</p>
-                        <a href="https://shopee.co.id/search?keyword=alat%20rumah%20tangga%20lengkap&trackingId=searchhint-1730720973-dc120c6a-9aa2-11ef-9250-aad32018191a" class="btn btn-primary">Beli Sekarang</a>
-                    </div>
-                </div>
-            </div>
+      <h2 class="section-title">Tanda Kasih</h2>
+      <p class="section-description">
+        Kehadiran Anda sudah cukup berarti bagi kami, tetapi jika ingin memberikan tanda kasih, berikut informasi hadiah:
+      </p>
+      <div class="gift-cards">
+        <!-- Kado Fisik -->
+        <div class="gift-card">
+          <div class="gift-icon">🎁</div>
+          <h3>Kado Fisik</h3>
+          <p>
+            <a href="https://shopee.co.id/" target="_blank" class="gift-link">Klik di sini untuk memberikan kado online</a>
+          </p>
         </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="donation" id="donation">
-    <div class="container">
-        <h2 class="section-title">Donasi Uang</h2>
-        <h5 class="card-titl">Informasi Donasi</h5>
-        <p class="card-text">Kami menerima donasi untuk membantu biaya pernikahan kami. Berikut adalah informasi rekening:</p>
-        <div class="row">
-            <div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="mb-2">
-                            <strong>Nama Bank:</strong> BCA
-                        </div>
-                        <div class="mb-2">
-                            <strong>Nama Pemilik:</strong> Aziz & Yati
-                        </div>
-                        <div class="mb-2">
-                          <strong>Nomor Rekening:</strong>
-                          <span id="account-number">123-456-7890</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16" target="_blank" onclick="copyToClipboard()" aria-label="Salin Nomor Rekening">
-                            <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-                          </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  
+        <!-- Transfer Bank -->
+        <div class="gift-card">
+          <div class="gift-icon">💳</div>
+          <h3>Transfer Bank</h3>
+          <p>Bank BCA<br>No. Rekening: <span id="bank-account">123-456-789</span></p>
+          <button class="copy-btn" data-copy="123-456-789">Salin Nomor Rekening</button>
         </div>
-        <div class="row">
-            <div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="mb-2">
-                            <strong>Nama Bank:</strong> BCA
-                        </div>
-                        <div class="mb-2">
-                            <strong>Nama Pemilik:</strong> Aziz & Yati
-                        </div>
-                        <div class="mb-2">
-                          <strong>Nomor Rekening:</strong>
-                          <span id="account-number">123-456-7890</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16" target="_blank" onclick="copyToClipboard()" aria-label="Salin Nomor Rekening">
-                            <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-                          </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  
+        <!-- E-Wallet -->
+        <div class="gift-card">
+          <div class="gift-icon">📱</div>
+          <h3>E-Wallet</h3>
+          <p>GoPay / Dana<br>No. HP: <span id="e-wallet">0812-3456-7890</span></p>
+          <button class="copy-btn" data-copy="0812-3456-7890">Salin Nomor E-Wallet</button>
         </div>
-        <div class="row">
-            <div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="mb-2">
-                            <strong>Nama Bank:</strong> BCA
-                        </div>
-                        <div class="mb-2">
-                            <strong>Nama Pemilik:</strong> Aziz & Yati
-                        </div>
-                        <div class="mb-2">
-                          <strong>Nomor Rekening:</strong>
-                          <span id="account-number">123-456-7890</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16" target="_blank" onclick="copyToClipboard()" aria-label="Salin Nomor Rekening">
-                            <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-                          </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <p class="card-text">Terima kasih atas dukungan Anda!</p>
+      </div>
     </div>
   </section>
   <!-- Footer Section -->
@@ -462,22 +395,40 @@
 
   </script>
   <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const elements = document.querySelectorAll('h1, h2, h3, h4, h5, p, strong, span, .icon, img');
+    document.addEventListener('DOMContentLoaded', function() {
+      const elements = document.querySelectorAll('h1, h2, h3, h4, h5, p, strong, span, .icon, img');
 
-  function checkVisibility() {
-    elements.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        el.style.opacity = 1;
-        el.style.transform = 'translate(0)';
+      function checkVisibility() {
+        elements.forEach(el => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.style.opacity = 1;
+            el.style.transform = 'translate(0)';
+          }
+        });
       }
-    });
-  }
 
-  window.addEventListener('scroll', checkVisibility);
-  checkVisibility(); // Untuk memeriksa elemen pada load pertama kali
-});
+      window.addEventListener('scroll', checkVisibility);
+      checkVisibility(); // Untuk memeriksa elemen pada load pertama kali
+    });
+  </script>
+  <script>
+        // JavaScript untuk salin ke clipboard
+    document.querySelectorAll('.copy-btn').forEach((button) => {
+      button.addEventListener('click', (e) => {
+        // Ambil data dari atribut data-copy
+        const copyText = e.target.getAttribute('data-copy');
+
+        // Salin ke clipboard
+        navigator.clipboard.writeText(copyText).then(() => {
+          // Tampilkan pesan sukses
+          alert('Teks berhasil disalin: ' + copyText);
+        }).catch((err) => {
+          console.error('Gagal menyalin teks: ', err);
+        });
+      });
+    });
+
   </script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

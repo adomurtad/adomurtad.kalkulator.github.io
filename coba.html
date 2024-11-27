@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Section</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* Styling untuk Gift Section */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.gift-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #6c63ff; /* Warna ungu lembut */
+}
+
+.section-description {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.gift-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gift-card {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gift-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gift-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #6c63ff; /* Warna ungu lembut */
+}
+
+.gift-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.gift-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.gift-link {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gift-link:hover {
+  text-decoration: underline;
+}
+
+.copy-btn {
+  margin-top: 10px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.copy-btn:hover {
+  background-color: #574dcf;
+}
+
+    </style>
+  <section id="gift" class="gift-section">
+    <h2 class="section-title">Wedding Gift</h2>
+    <p class="section-description">
+      Kehadiran Anda sudah cukup berarti bagi kami, tetapi jika ingin memberikan tanda kasih, berikut informasi hadiah:
+    </p>
+
+    <div class="gift-cards">
+      <!-- Kado Fisik -->
+      <div class="gift-card">
+        <div class="gift-icon">🎁</div>
+        <h3>Kado Fisik</h3>
+        <p>
+          <a href="https://shopee.co.id/" target="_blank" class="gift-link">Klik di sini untuk memberikan kado online</a>
+        </p>
+      </div>
+
+      <!-- Transfer Bank -->
+      <div class="gift-card">
+        <div class="gift-icon">💳</div>
+        <h3>Transfer Bank</h3>
+        <p>Bank BCA<br>No. Rekening: <span id="bank-account">123-456-789</span></p>
+        <button class="copy-btn" data-copy="123-456-789">Salin Nomor Rekening</button>
+      </div>
+
+      <!-- E-Wallet -->
+      <div class="gift-card">
+        <div class="gift-icon">📱</div>
+        <h3>E-Wallet</h3>
+        <p>GoPay / Dana<br>No. HP: <span id="e-wallet">0812-3456-7890</span></p>
+        <button class="copy-btn" data-copy="0812-3456-7890">Salin Nomor E-Wallet</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // JavaScript untuk salin ke clipboard
+  </script>
+</body>
+</html>

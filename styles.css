@@ -6,8 +6,14 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+  padding: 50px 20px;
+  background-color: #f1f1f1;
 }
-
+.count {
+  border: 5px solid white;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
 .countdown-item {
   text-align: center;
   background-color: #6c757d;
@@ -15,7 +21,10 @@
   border-radius: 8px;
   padding: 10px 10px;
   width: 65px;
-  box-shadow: 0 4px 6px white;
+  border: 3px solid white;
+}
+.title {
+  margin: 8px;
 }
 
 .countdown-item h1 {
@@ -25,7 +34,7 @@
 
 .countdown-item p {
   font-size: 14px;
-  margin: 8px 0 0;
+  margin: 3px 0 0;
 }
 
 .title {
@@ -34,13 +43,12 @@
 }
 
 body {
-  max-width: 415px !important;
+  max-width: 576px !important;
   line-height: 1.6;
   background-color: #f4f4f9;
   color: #333;
   font-size: 16px;
-  margin: 0 auto !important;
-  padding: 0 auto;
+  align-items: center;
   overflow: hidden;
 }
 .section {
@@ -67,7 +75,6 @@ body {
   color: black;
   text-align: center;
   padding: 60px 15px;
-  height: 100vh;
   border-radius: 5px;
 
 }
@@ -75,9 +82,9 @@ body {
 .invitation-item {
   text-align: center;
   background: turquoise;
+  border: 5px solid white;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 6px 8px rgba(255, 255, 255, 0.952);
 }
 .hero-container {
   display: flex;
@@ -85,7 +92,12 @@ body {
   align-items: center;
   text-align: center;
 }
-
+.couple-name {
+  font-family: 'Allura', cursive;
+  font-size: 2rem;
+  color: black;
+  margin: 0;
+}
 .hero__title {
   font-family: 'allura';
   font-size: 3rem;
@@ -142,8 +154,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 105vh;
   border-radius: 5px;
+  border: 5px solid white;
 }
 
 .and {
@@ -153,26 +165,27 @@ body {
 
 .invitation-item-hero {
   text-align: center;
-  background: turquoise;
+  background: transparent;
   border-radius: 10px;
   box-shadow: 0 6px 8px rgba(255, 255, 255, 0.952);
   padding-block: 10px;
 }
 .photo-container-hero {
-  border: 3px solid #e4e2e1;
-  border-top-left-radius: 200px;
-  border-top-right-radius: 200px;
+  border: 4px solid #e4e2e1;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
   width: 280px;
   height: 300px;
   overflow: hidden;
   margin: 0 auto 1.5rem;
 }
 .photo-container-hero1 {
-  background-color: whitesmoke;
+  background-color: #3B1C32;
+  border: 4px solid #e4e2e1;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 280px;
-  height: 40px;
+  height: 50px;
   overflow: hidden;
   margin: 0 auto 1.5rem;
 }
@@ -208,7 +221,7 @@ body {
 .couple-names {
   font-family: 'Allura', cursive;
   font-size: 2rem;
-  color: #7a5a43;
+  color: white;
   margin: 0;
 }
 
@@ -242,7 +255,7 @@ body {
 .hadist {
   background-color: #f3f4f5;
   border-radius: 4px;
-
+  border: 5px solid white;
 }
 .hadist p {
   font-family: 'Allura';
@@ -258,10 +271,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
   text-align: center;
   border-radius: 10px;
-
+  border: 5px solid white;
 }
 
 
@@ -290,6 +302,7 @@ body {
   display: flex;
   border: 1px solid #ddd;
   border-radius: 8px;
+  border: 3px solid white;
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -350,6 +363,7 @@ body {
   text-align: center;
   padding: 20px 0;
   background-color: #f3f4f5;
+  border: 5px solid white;
 }
 .text-times h2 {
   font-family: 'Allura';
@@ -392,8 +406,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
   border-radius: 10px;
+  border: 5px solid white;
 
 }
 .timeline {
@@ -442,6 +456,7 @@ body {
   padding: 15px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
+  border: 2px solid white;
 }
 
 .timeline-content h3 {
@@ -457,6 +472,7 @@ body {
 
 .quotes-section {
   background-color: #FBFBFB;
+  border: 5px solid white;
 }
 .quotes-section p {
   font-family: 'Allura', sans-serif;
@@ -476,8 +492,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
   border-radius: 5px;
+  border: 5px solid white;
 }
 .gallery h2 {
   font-family: 'Allura';
@@ -506,8 +522,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
   border-radius: 5px;
+  border: 5px solid white;
 }
 .rsvp {
   padding: 20px 0;
@@ -563,6 +579,7 @@ body {
   padding: 20px;
   background-color: #e8ecde;
   border-radius: 8px;
+  border: 5px solid white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
 }
@@ -583,105 +600,92 @@ body {
 }
 
 /* gifts section */
-.gifts {
+/* Styling untuk Gift Section */
+
+.gift-section {
   background-image: url('img/bgd.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
   border-radius: 5px;
-}
-.gifts {
-  padding: 40px 0;
+  border: 4px solid #FBFBFB;
 }
 
 .section-title {
+  font-size: 2rem;
+  color: #4f4e5f; /* Warna ungu lembut */
+}
+
+.section-description {
+  font-size: 0.8rem;
   text-align: center;
   margin-bottom: 30px;
+  color: #666;
+}
+
+.gift-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gift-card {
+  background-color: #f1f1f1;
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 380px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gift-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gift-icon {
+  font-size: 10rem;
+  margin-bottom: 15px;
+  color: #6c63ff; /* Warna ungu lembut */
+}
+
+.gift-card h3 {
   font-size: 2rem;
+  font-family: 'Allura';
+  margin-bottom: 10px;
+  color: #444;
 }
 
-.card {
-  transition: transform 0.3s;
-}
-.card-img-top1 {
-margin-top: 8px;
-}
-.card:hover {
-  transform: scale(1.05);
+.gift-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
 }
 
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
+.gift-link {
+  color: #6c63ff;
+  text-decoration: none;
 }
 
-.btn-primary {
-  background-color: #1c2938;
-  border: none;
+.gift-link:hover {
+  text-decoration: underline;
 }
 
-.btn-primary:hover {
-  background-color: #203c5a;
+.copy-btn {
+  margin-top: 10px;
+  background-color: transparant;
+  border: 3px solid #444;
+  color: #444;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
 }
 
-/* dnasi section */
-.donation  {
-background-image: url('img/bgd.webp');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-height: 100vh;
-border-radius: 5px;
-}
-.donation {
-padding: 50px 0;
-}
 
-.section-title {
-text-align: center;
-margin-bottom: 30px;
-font-size: 2rem;
-}
-.card-titl {
-font-family: 'Lora';
-text-align: center;
-font-size: 1rem;
-}
-.card-text {
-font-family: 'Lora';
-text-align: center;
-font-size: 0.8rem;
-}
-.card {
-transition: transform 0.3s;
-}
-
-.card:hover {
-transform: scale(1.05);
-}
-
-.btn-link {
-padding: 0;
-color: #007bff;
-text-decoration: underline;
-cursor: pointer;
-}
-
-.btn-link:hover {
-color: #0056b3;
-}
-.copy-icon {
-background: none;
-border: none;
-cursor: pointer;
-margin-left: 5px;
-color: #007bff;
-}
-
-.copy-icon:hover {
-color: #0056b3;
-}
 
 /* navbar */
 .navbar-bottom {
@@ -690,6 +694,8 @@ bottom: 0;
 left: 0;
 width: 100%;
 background-color: #333;
+border: 2px solid white;
+border-radius: 5px;
 display: flex;
 justify-content: space-around;
 padding: 10px 0;
@@ -727,6 +733,8 @@ footer {
   padding: 20px 0;
   text-align: center;
   font-size: 14px;
+  border: 2px solid white;
+  border-radius: 8px;
 }
 
 footer p {
