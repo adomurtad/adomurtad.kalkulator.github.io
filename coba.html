@@ -3,140 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gift Section</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Wedding Frame</title>
 </head>
 <body>
-    <style>
-        /* Styling untuk Gift Section */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  <style>
+/* Hero / Header Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('img/bgd.webp') no-repeat center center/cover;
+  background-position: relative;
+  color: black;
+  text-align: center;
+  padding: 60px 15px;
+  border-radius: 5px;
+
 }
 
-.gift-section {
-  padding: 50px 20px;
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: #fff;
+}
+.couple-name {
+  font-family: 'Allura', cursive;
+  font-size: 2rem;
+  color: black;
+  margin: 0;
+}
+.hero__title {
+  font-family: 'allura';
+  font-size: 3rem;
+}
+
+.hero__date {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: black;
 }
 
 .section-title {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #6c63ff; /* Warna ungu lembut */
-}
-
-.section-description {
-  font-size: 1rem;
-  margin-bottom: 30px;
-  color: #666;
-}
-
-.gift-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.gift-card {
-  background-color: #f1f1f1;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  padding: 20px;
+  font-family: 'Allura', sans-serif;
+  font-size: 5px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: black;
+  margin-bottom: 20px;
 }
-
-.gift-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.section-tit {
+  font-family: 'Allura', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
 }
-
-.gift-icon {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  color: #6c63ff; /* Warna ungu lembut */
-}
-
-.gift-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #444;
-}
-
-.gift-card p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
-}
-
-.gift-link {
-  color: #6c63ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.gift-link:hover {
-  text-decoration: underline;
-}
-
-.copy-btn {
-  margin-top: 10px;
-  background-color: #6c63ff;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
+  .date {
   font-size: 0.9rem;
+  color: #7a5a43;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
-.copy-btn:hover {
-  background-color: #574dcf;
+.hero__action {
+  background-color: #a58b74;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-    </style>
-  <section id="gift" class="gift-section">
-    <h2 class="section-title">Wedding Gift</h2>
-    <p class="section-description">
-      Kehadiran Anda sudah cukup berarti bagi kami, tetapi jika ingin memberikan tanda kasih, berikut informasi hadiah:
-    </p>
+.hero__action:hover {
+  background-color: #8c705e;
+}
 
-    <div class="gift-cards">
-      <!-- Kado Fisik -->
-      <div class="gift-card">
-        <div class="gift-icon">🎁</div>
-        <h3>Kado Fisik</h3>
-        <p>
-          <a href="https://shopee.co.id/" target="_blank" class="gift-link">Klik di sini untuk memberikan kado online</a>
-        </p>
+/* Container */
+.frame-container {
+  text-align: center;
+  position: relative;
+  text-align: center;
+  background: turquoise;
+  border: 5px solid white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Lingkaran untuk foto pasangan */
+.photo-frame {
+  width: 250px;
+  height: 250px;
+  border: 2px solid #d1b8a7; /* Warna border */
+  border-radius: 50%; /* Membuat lingkaran */
+  overflow: hidden;
+  margin: 0 auto; /* Agar berada di tengah */
+  position: relative;
+  z-index: 1;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dekorasi bunga di luar lingkaran */
+.decorative-border {
+  position: absolute;
+  align-items: center;
+  width: 350px;
+  height: 340px;
+  bottom: 185px;
+  left: -18px;
+  z-index: 2;
+}
+
+.decorative-border img {
+  width: 100%;
+  height: auto;
+}
+
+
+  </style>
+    <header class="hero">
+      <div class="frame-container">
+        <div class="photo-frame">
+          <img src="img/DSC-removebg-preview.png" alt="Couple Photo">
+        </div>
+        <div class="decorative-border">
+          <img src="img/Remove-bg.ai_1732786225663.png" alt="Flower Decoration">
+        </div>
+        <h1 class="couple-name">Ajij & Yati</h1>
+        <p class="invitation-text">Kepada Bapak/Ibu/Saudara/i:</p>
+        <p class="invitation-text1">Acep saepul</p>
+        <p class="date">Minggu, 29 Desember 2024</p>
+        <a href="#hadist" id="showContent" class="hero__action">Lihat Undangan</a>
       </div>
-
-      <!-- Transfer Bank -->
-      <div class="gift-card">
-        <div class="gift-icon">💳</div>
-        <h3>Transfer Bank</h3>
-        <p>Bank BCA<br>No. Rekening: <span id="bank-account">123-456-789</span></p>
-        <button class="copy-btn" data-copy="123-456-789">Salin Nomor Rekening</button>
-      </div>
-
-      <!-- E-Wallet -->
-      <div class="gift-card">
-        <div class="gift-icon">📱</div>
-        <h3>E-Wallet</h3>
-        <p>GoPay / Dana<br>No. HP: <span id="e-wallet">0812-3456-7890</span></p>
-        <button class="copy-btn" data-copy="0812-3456-7890">Salin Nomor E-Wallet</button>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    // JavaScript untuk salin ke clipboard
-  </script>
+    </header>
 </body>
 </html>
