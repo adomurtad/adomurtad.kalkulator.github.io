@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <style>
-        body {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romantic Rain</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* CSS ada di bagian berikut */
+    /* Latar belakang gradasi romantis */
+body {
   margin: 0;
   padding: 0;
   background-image: url(img/Screenshot\ 2024-12-09\ 231915.png);
+  background-position: relative;
   overflow: hidden;
-  font-family: Arial, sans-serif;
+  font-family: 'Dancing Script', cursive; /* Font elegan */
 }
+
 
 .rain-container {
   position: relative;
@@ -24,9 +27,9 @@
 .word {
   position: absolute;
   font-size: 24px; /* Ukuran font */
-  color: var(--color, #fff); /* Warna teks berdasarkan custom property */
   animation: rain 5s linear infinite;
   opacity: 0;
+  color: var(--color, #fff);
 }
 
 @keyframes rain {
@@ -65,39 +68,53 @@
   animation-duration: 4.5s;
 }
 
-    </style>
-    <div class="rain-container">
-        <span class="word">gesta</span>
-        <span class="word">gestasalwa</span>
-        <span class="word">gesta cantik</span>
-        <span class="word">gesta cantik</span>
-        <span class="word">gesta cantik</span>
-        <span class="word">gesta cantik</span>
-        <span class="word">gesta cantik</span>
-        <span class="word">gesta cantik</span>
-        <span class="word">gesta cantik</span>
-        <span class="word">gesta cantik</span>
-        <span class="word">gesta cantik</span>
-        <span class="word">gesta cantik</span>
-        <span class="word">gesta</span>
-        <span class="word">moga terhibur</span>
-      </div>
+.audio-only {
+      width: 1px; /* Lebar iframe kecil */
+      height: 1px; /* Tinggi iframe kecil */
+      border: none; /* Menghilangkan border */
+    }
 
-      <script>
-        function getRandomColor() {
-          // Menghasilkan warna heksadesimal acak
-          return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-        }
-      
-        document.addEventListener("DOMContentLoaded", () => {
-          const words = document.querySelectorAll(".word");
-          words.forEach(word => {
-            const randomColor = getRandomColor();
-            word.style.setProperty("--color", randomColor);
-          });
-        });
-      </script>
-      
-      
+  </style>
+</head>
+<body>
+  <div class="rain-container">
+    <!-- Kata-kata romantis -->
+    <span class="word">gesta🌹</span>
+    <span class="word">gestasalwa</span>
+    <span class="word">gesta cantik</span>
+    <span class="word">gesta cantik✨</span>
+    <span class="word">gesta cantik❤️</span>
+    <span class="word">gesta cantik❤️</span>
+    <span class="word">gesta cantik❤️</span>
+    <span class="word">gesta cantik❤️</span>
+    <span class="word">gesta cantik❤️</span>
+    <span class="word">gesta cantik❤️</span>
+    <span class="word">gesta cantik❤️</span>
+    <span class="word">gesta cantik❤️</span>
+    <span class="word">gesta</span>
+    <span class="word">moga terhibur</span>
+    <iframe 
+    class="audio-only"
+    src="https://www.youtube.com/embed/gJmuoOiZuNY?autoplay=1&loop=1&playlist=gJmuoOiZuNY" 
+    title="YouTube Audio Player" 
+    width="0" 
+    height="0" 
+    frameborder="0" 
+    allow="autoplay">
+  </iframe>
+  </div>
+  
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const flowers = document.querySelectorAll(".word");
+  flowers.forEach(flower => {
+    flower.style.left = `${Math.random() * 100}vw`; // Posisi horizontal acak
+    flower.style.animationDelay = `${Math.random() * 5}s`; // Waktu mulai acak
+    flower.style.animationDuration = `${6 + Math.random() * 4}s`; // Durasi animasi acak
+  });
+});
+
+  </script>
 </body>
 </html>
